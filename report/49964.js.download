@@ -1,0 +1,159 @@
+(function(self, ns){
+    var GENERIC_BUNDLE_URL = "https://fast.appcues.com/generic/main/4.13.0/appcues.main.41d0974ece64f3bd60706363affda4fa570e78fa.js";
+    var ACCOUNT_DETAILS = {"GENERIC_BUNDLE_DOMAIN":"https://fast.appcues.com","GENERIC_BUNDLE_PATH":"/generic/main/4.13.0/appcues.main.41d0974ece64f3bd60706363affda4fa570e78fa.js","RELEASE_ID":"41d0974ece64f3bd60706363affda4fa570e78fa","VERSION":"4.13.0","account":{"buffer":0,"isTrial":false,"isTrialExpired":false,"stripePlanId":"unicorn1M"},"accountId":"49964","integrations":{"segment":{"createdAt":1567013749181,"createdBy":"idrqM3fgdSSGR6GIu50jmxcTyPq1","id":"segment","integrationId":"49964:segment","isEnabled":true}},"styling":{"globalBeaconColor":"#0f62fe","globalBeaconStyle":"","globalHotspotAnimation":"hotspot-animation-pulse","globalHotspotStyling":"","globalStyling":"\n      @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,600&subset=cyrillic,cyrillic-ext,greek,latin-ext,vietnamese');\n      \n\n.appcues-actions-right > .appcues-button.appcues-button-success, .appcues-progress-bar-success {\n    background-color: #0f62fe;\n}\n.appcues-actions-right > .appcues-button.appcues-button-success:hover {\n    background-color: #3379fe;\n}\n\n\n.appcues-actions-right .appcues-button {\n    color: #ffffff;\n}\n\n\n.appcues-actions-right .appcues-button:hover {\n    color: #ffffff !important;\n}\n\n\n.appcues-actions-left >  .appcues-button {\n    background-color: #393939;\n}\n.appcues-actions-left > .appcues-button:hover {\n    background-color: #4b4b4b;\n}\n\n\n.appcues-actions-left .appcues-button {\n    color: #78a9ff;\n}\n\n\n.appcues-actions-left .appcues-button:hover {\n    color: #78a9ff !important;\n}\n\n\n.appcues-actions-right .appcues-button, .appcues-actions-left .appcues-button {\n    border-radius: 3px;\n}\n\n\nbody, appcues cue, .tooltip .content {\n    font-family: IBM Plex Sans;\n}\n\n\nbody h1, body h2, body h3, body h4, body h5,\nappcues cue h1, appcues cue h2, appcues cue h3, appcues cue h4, appcues cue h5,\n.tooltip .content h1, .tooltip .content h2, .tooltip .content h3, .tooltip .content h4, .tooltip .content h5 {\n    font-family: IBM Plex Sans;\n}\n\n\n  body, appcues cue, .tooltip .content {\n      color: #ffffff;\n  }\n  \n\n.tooltip .content .panel {\n  background-color: #393939;\n  border-color: #393939;\n}\n\n.tooltip .content .panel:before, .tooltip .content .panel:after {\n  height: 13px;\n  width: 13px;\n  background-color: #393939;\n  border-radius: 2px;\n  border: none;\n  transform: rotate(45deg);\n}\n\n.tooltip .content .panel:after {\n  position: absolute;\n  content: \"\";\n  z-index: -1;\n}\n\n.tooltip .content.content-top .panel:before, .tooltip .content.content-top .panel:after {\n  margin-left: -7px;\n}\n\n.tooltip .content.content-top .panel:before,\n.tooltip .content.content-top .panel:after,\n.tooltip .content.content-top-left .panel:before,\n.tooltip .content.content-top-left .panel:after,\n.tooltip .content.content-top-right .panel:before,\n.tooltip .content.content-top-right .panel:after {\n  margin-top: -6px;\n}\n\n.tooltip .content.content-bottom .panel:before, .tooltip .content.content-bottom .panel:after {\n  margin-left: -7px;\n}\n\n.tooltip .content.content-bottom .panel:before,\n.tooltip .content.content-bottom .panel:after,\n.tooltip .content.content-bottom-left .panel:before,\n.tooltip .content.content-bottom-left .panel:after,\n.tooltip .content.content-bottom-right .panel:before,\n.tooltip .content.content-bottom-right .panel:after {\n  margin-bottom: -6px;\n}\n\n.tooltip .content.content-right .panel:before, .tooltip .content.content-right .panel:after {\n  margin-top: -7px;\n}\n\n.tooltip .content.content-right .panel:before,\n.tooltip .content.content-right .panel:after,\n.tooltip .content.content-right-top .panel:before,\n.tooltip .content.content-right-top .panel:after,\n.tooltip .content.content-right-bottom .panel:before,\n.tooltip .content.content-right-bottom .panel:after {\n  margin-right: -6px;\n}\n\n.tooltip .content.content-left .panel:before, .tooltip .content.content-left .panel:after {\n  margin-top: -7px;\n}\n\n.tooltip .content.content-left .panel:before,\n.tooltip .content.content-left .panel:after,\n.tooltip .content.content-left-top .panel:before,\n.tooltip .content.content-left-top .panel:after,\n.tooltip .content.content-left-bottom .panel:before,\n.tooltip .content.content-left-bottom .panel:after {\n  margin-left: -6px;\n}\n\n.tooltip .content.content-top-left .panel:before,\n.tooltip .content.content-top-left .panel:after,\n.tooltip .content.content-bottom-left .panel:before,\n.tooltip .content.content-bottom-left .panel:after {\n  right: 10px;\n}\n\n.tooltip .content.content-top-right.panel:before,\n.tooltip .content.content-top-right .panel:after,\n.tooltip .content.content-bottom-right .panel:before,\n.tooltip .content.content-bottom-right .panel:after {\n  left: 10px;\n}\n\n.tooltip .content.content-right-bottom .panel:before,\n.tooltip .content.content-right-bottom .panel:after,\n.tooltip .content.content-left-bottom .panel:before,\n.tooltip .content.content-left-bottom .panel:after {\n  top: 10px;\n}\n\n.tooltip .content.content-right-top.panel:before,\n.tooltip .content.content-right-top .panel:after,\n.tooltip .content.content-left-top .panel:before,\n.tooltip .content.content-left-top .panel:after {\n  bottom: 10px;\n}\n\n.tooltip .content.content-top .panel:after {\n  left: 50%;\n}\n\n.tooltip .content.content-top .panel:after,\n.tooltip .content.content-top-left .panel:after,\n.tooltip .content.content-top-right .panel:after {\n  top: 100%;\n}\n\n.tooltip .content.content-bottom .panel:after {\n  left: 50%;\n}\n\n.tooltip .content.content-bottom .panel:after,\n.tooltip .content.content-bottom-left .panel:after,\n.tooltip .content.content-bottom-right .panel:after {\n  bottom: 100%;\n}\n\n.tooltip .content.content-right .panel:after {\n  top: 50%;\n}\n\n.tooltip .content.content-right .panel:after,\n.tooltip .content.content-right-top .panel:after,\n.tooltip .content.content-right-bottom .panel:after {\n  right: 100%;\n}\n\n.tooltip .content.content-left .panel:after {\n  top: 50%;\n}\n\n.tooltip .content.content-left .panel:after,\n.tooltip .content.content-left-top .panel:after,\n.tooltip .content.content-left-bottom .panel:after {\n  left: 100%;\n}\n\n\n.tooltip .content .panel {\n  color: #ffffff;\n}\n\n.tooltip h1, .tooltip h2, .tooltip h3, .tooltip h4, .tooltip h5 {\ncolor: #ffffff;\n}\n\n  .panel.panel-default {\n    margin-right: 3px;\n    margin-bottom: 2px;\n    border-radius: 1px;\n  }\n  \n\n  .panel.panel-default, .content .panel:after {\n    box-shadow: 1px 1px 2px hsla(0,0%,13%,.6);\n  }\n  \n\n      .appcues-backdrop[data-pattern-type=left], .appcues-backdrop[data-pattern-type=shorty], .appcues-backdrop[data-pattern-type=modal] {\n        background-color: #000000;\n      }\n      \n\n      .appcues-backdrop[data-pattern-type=left], .appcues-backdrop[data-pattern-type=shorty], .appcues-backdrop[data-pattern-type=modal] {\n        opacity: 0.5;\n      }\n      \n\nappcues cue {\n    background: #393939\n}\n\n\nappcues cue * {\n    color: #ffffff\n}\n\n\n/************************************/\n/* Appcues Base Presets */\n\n/*** Remove next/previous arrows */\nappcues .appcues-actions-right .appcues-button {\n    padding-right: 16px;\n    position: relative;\n}\nappcues .appcues-actions-right .appcues-button:after {\n    content: none; }\nappcues .appcues-actions-left .appcues-button {\n    padding-left: 16px; }\nappcues .appcues-actions-left .appcues-button:before {\n    content: none; }\n\n/*** Adjust style of progress bar */\n\nappcues .appcues-progress {\n  background-color:#DFE3E6;\n  height: 4px;\n  border: 0;\n}\nappcues .appcues-progress .appcues-progress-bar { \n    background-color: #3D70B2;\n    height:4px;\n    max-width:550px;\n    transition:width 0.5s ease 0.07s; }\nappcues .appcues-progress .appcues-progress-bar:not([aria-valuenow='100']) { border-top-right-radius: 0; border-bottom-right-radius: 0; }\n\n/*** Adjust margins & padding */\nappcues cue { \n    min-height: 100px !important; \n    padding-top:48px;\n}\nappcues cue .apc-hero { \n    margin: -22px -54px 0; }\n/* Fix up Hero typography */\nappcues cue .apc-hero h2 { \n    font-size: 18px;\n    font-weight: bold; }\nappcues[data-pattern-type=modal] cue {\n    box-shadow: 0 0 18px rgba(0,0,0,0.25);\n}\n.tooltip .panel { padding: 16px 16px 10px; }\n\n/*** Adjust typography */\n/***    IBM notes:\n        Modals\n        H1 - header\n        H2 - body\n        H3 - counter (1of3)\n        Tooltips\n        H1 - header\n        H2 - body\n        H3 - counter (1of3)\n*/\nappcues cue h1 { \n    font-weight: 400;\n    font-size: 28px;\n    line-height: 2.25rem;\n    color: #161616;\n    margin-top: 0.5em; \n    -webkit-font-smoothing:antialiased; }\nappcues cue h2 {\n    font-weight: 400;\n    font-size: 16px;\n    line-height: 1.5rem;\n    color: #161616;\n    margin-top: 0em; \n    -webkit-font-smoothing:antialiased; }\nappcues cue h3 {\n    font-weight: 400;\n    letter-spacing: .16px;\n    font-size: 14px;\n    line-height: 1.25rem;\n    color: #393939;\n    margin-top: 0em; \n    text-transform: none;\n    -webkit-font-smoothing:antialiased; }\n\n.tooltip h1 {\n    font-weight: 600;\n    letter-spacing: .14px;\n    font-size: 16px;\n    line-height: 1.125rem;\n    color: #FFFFFF;\n    margin-top: 0.25em; \n    -webkit-font-smoothing:antialiased; }\n.tooltip h2 {\n    font-weight: 400;\n    letter-spacing: .16px;\n    font-size: 14px;\n    line-height: 1.25rem;\n    color: #FFFFFF;\n    margin-top: 0em;\n    -webkit-font-smoothing:antialiased; }\n.tooltip h3 {\n    font-weight: 400;\n    letter-spacing: .16px;\n    font-size: 14px;\n    line-height: 1.25rem;\n    color: #FFFFFF;\n    margin-top: 0em; \n    text-transform: none;\n    -webkit-font-smoothing:antialiased; }\n\n/*** Adjust links in content */\nappcues cue section a[data-step], appcues cue section a[href], .tooltip p a[data-step], .tooltip p a[href], .tooltip h2 a[href] {\n    color: #0F62FE;\n    text-decoration: underline;\n    font-weight: 400;\n}\nappcues cue section a[data-step]:hover, appcues cue section a[href]:hover, .tooltip p a[data-step]:hover, .tooltip p a[href]:hover, .tooltip h2 a[href]:hover {\n    color: #0F62FE;\n    text-decoration: underline;\n    font-weight: 600;\n/* a18y */\n}\n\n/*** Adjust skip X */\nappcues .appcues-skip a {\n    background: none;\n    color:#FFFFFF;\n    opacity:1;\n    padding: 16px 16px 0px 0px;\n    font-size: 24px; \n}\n.panel .panel-content .exit-tooltip{\n    color: #5A6872;\n    opacity:1;\n}\n\n/* End Appcues Base */\n/************************************/\n\n/*___Buttons and Links___*/\n.appcues-actions-right {\n\t/*[The section of the button row which hold the 'Next' or righthand side button.]*/\n}\n\n.tooltip .content .panel .panel-content-actions .appcues-actions-right {\n\t/*[Full selector to edit .appcues-actions-right in hotspots/tooltips]*/\n}\n\nappcues cue .appcues-actions-right {\n\t/*[Full selector to edit .appcues-actions-right in modals/slideouts]*/\n}\n\n.appcues-actions-left > .appcues-button{\n    background-color: #F4F7FB;\n\tcolor: #3D70B2;\n\tborder: 2px solid #3D70B2;\n\ttransition: all 0.2s ease;\n}\n\n.appcues-actions-left > .appcues-button:hover{\n    background-color: #0353E9;\n\tcolor: #FFFFFF;\n}\n\n.appcues-actions-left{\n\t/*[The section of the button row which hold the 'Prev' or lefthand side button.]*/\n}\n\n.tooltip .content .panel .panel-content-actions .appcues-actions-left {\n\t/*[Full selector to edit .appcues-actions-left in hotspots/tooltips]*/\n}\n\nappcues cue .appcues-actions-left {\n\t/*[Full selector to edit .appcues-actions-left in modals/slideouts]*/\n}\n\n\n.appcues-button {\n\t/*[Generic selector for any button.]*/\n}\n\n\n.appcues-button-success {\n\t/*[Selector for the 'Next' buttons (buttons which advance the step of the flow).]*/\n}\n\n.panel .panel-content-actions .appcues-actions-right > .appcues-button.appcues-button-success {\n\t/*[Full selector to edit .appcues-button-success in hotspots/tooltips]*/\n}\n\nappcues cue .appcues-actions-right > .appcues-button.appcues-button-success {\n\t/*[Full selector to edit .appcues-button-success in modals/slideouts]*/\n\tborder: 2px solid #0F62FE;\n\ttransition: all 0.2s ease;\n}\n\nappcues cue .appcues-actions-right > .appcues-button.appcues-button-success:hover {\n\t/*[Full selector to edit .appcues-button-success in modals/slideouts]*/\n\tborder: 2px solid #0353E9;\n}\n\n.panel .panel-content-actions .appcues-skip {\n\t/*[Full selector to edit .appcues-skip in tooltips/hotspots] (Hide these tips)*/\n}\n\nappcues .appcues-skip {\n\t/*[Full selector to edit .appcues-skip in modals/slideouts] (X button to close)*/\n\tmax-width:550px;\n}\n\n\nappcues[data-pattern-type=shorty] cue {\n\t/*[Selector for slideouts specifically]*/\n}\n\nappcues[data-pattern-type=modal] cue {\n\t/*[Selector for modals specifically]*/\n\tmax-width:550px;\n\n}\n\n\n/*___Modals and Slideouts___*/\n\nappcues {\t\n\t/*[This element wraps the entire modal or slideout.]*/\n}\n\nappcues cue {\n\t/*[This is where the main content for modals and slideouts lives.]*/\n\t\tpadding: 100px 48px 148px 48px;\n\t\tbackground-color: #FFFFFF;\n\t\t\n}\n\nappcues .appcues-backdrop[data-pattern-type=modal] {\n\t/*[The backdrop (darkened background) for modals.]*/\n}\n\nappcues .appcues-progress {\n\t/*[The progress bar which indicates how far a user is in the flow]*/\n}\n\nappcues cue .apc-hero {\n\t/*[This is the selector for a hero image.]*/\n}\n\n\nappcues cue .appcues-actions { \n    background-color: #FFFFFF;\n    width: 100%;\n    height:88px;\n    padding: 24px 48px;\n\t/*[The row where all the buttons are placed.]*/\n}\n\n.footer-container{\n    display:flex;\n    justify-content: flex-end;\n    background: #FFFFFF;\n    align-items: center;\n    width:100%;\n    height:88px;\n    padding-left:0 34px 0 34px;\n}\n\n.footer-container div{\n    display:flex;\n    align-items:center;\n    margin-right:16px;\n    height:40px;\n    width:auto;\n    padding: 0 16px 0 16px;\n    border:2px solid #3D70B2;\n    font-weight:600;\n}\n\n\n\n/*___Hotspots and Tooltips___*/\n\n.tooltip .content .panel {\n\t/*[This is selector for the tooltip panel itself. The styles to the arrow can be accessed using the ::before selector (see below)]*/\n}\n\n.tooltip .content .panel .panel-content {\n\t/*[This is the selector for any content within the tooltip. This applies to both body text and the actions row.]*/\n\tpadding: 0px;\n}\n\n.tooltip .content .panel .panel-content-actions {\n\t/*[The specific container selection for the row with buttons/actions.]*/\n}\n\nappcues[data-pattern-type=modal] {\n    padding-top: 8%; \n    /* Adjust based on how far you want it from the top of the page */\n}\n\nappcues-layer .apc-spotlight {\n    borderImage: 'radial-gradient(transparent 2%, rgba(244, 247, 251, 0.75) 28%) 49% 49% 49% 49%' !important;}\n    \n.appcues-button {\n    text-align:center;\n    margin-top:20px;\n    float:right;\n    border-radius:0%;\n    height:32px;\n    display:flex;\n    justify-content:center;\n    align-items:center;\n    padding: 0px 16px;\n\n      /* this styling controls the buttons for all the appcues buttons */\n}\n\n.appcues-button.primary {\n    background-color:#0F62FE;\n}\n\n.appcues-button.primary:hover {\n    background-color: #0353E9;\n    color: white;\n}\n\n.appcues-button.secondary {\n    background-color: #393939;\n    color:#78A9FF;\n    margin-right:16px;\n}\n\n.appcues-button.secondary:hover {\n    background-color: #4C4C4C;\n    color: #78A9FF;\n}\n\nappcues[data-pattern-type=modal] .appcues-button {\n        height:40px;\n        margin-top: 0px;\n           /* this styling overrides the styling for 'all the appcues buttons' so we can have larger 40px size buttons for the modals */\n}\n\n.tooltip .panel.panel-default {\nbox-shadow: 0 4px 8px 0 rgba(0,0,0,0.10);\n}\n\na.appcues-button {\npadding: 0px 16px !important;\n}\n\n/*set width of tooltips*/\n.tooltip .panel {\nwidth: 337px !important;\nmin-width: 337px !important;\n}\n\n/*make the tooltips in builder match preview mode*/\n#frame-mount .frame-content > div {\nwidth: 355px !important;\nmin-width: 355px !important;\n}\n\n\n    appcues .appcues-actions-right .appcues-button { padding-right: 18px; }\n    appcues .appcues-actions-right .appcues-button:after { content: none; }\n    appcues .appcues-actions-left .appcues-button { padding-left: 18px; }\n    appcues .appcues-actions-left .appcues-button:before { content: none; }","id":"-M3RpPv_B_HRUgmp1lNa","typekitId":""}};
+    var VERSION = ACCOUNT_DETAILS.VERSION;
+    var RELEASE_ID = ACCOUNT_DETAILS.RELEASE_ID;
+    var GENERIC_BUNDLE_DOMAIN = ACCOUNT_DETAILS.GENERIC_BUNDLE_DOMAIN;
+    var accountId = ACCOUNT_DETAILS.accountId;
+    var isBootstrapped = false;
+
+    self.AppcuesBundleSettings = {
+      accountId: accountId,
+      VERSION: VERSION,
+      RELEASE_ID: RELEASE_ID,
+      GENERIC_BUNDLE_DOMAIN: GENERIC_BUNDLE_DOMAIN,
+      GENERIC_BUNDLE_PATH: ACCOUNT_DETAILS.GENERIC_BUNDLE_PATH,
+      styling:  ACCOUNT_DETAILS.styling,
+      integrations: ACCOUNT_DETAILS.integrations,
+      account: ACCOUNT_DETAILS.account
+    };
+
+    var skipAMD = false;
+    var windowGlobals = window["AppcuesSettings"];
+    if (
+      windowGlobals &&
+      typeof windowGlobals === "object" &&
+      windowGlobals.skipAMD === true
+    ) {
+      skipAMD = true;
+    }
+
+    var doc = self.document;
+    self[ns] = self[ns] || [];
+    var Appcues = self[ns];
+    if (Appcues.invoked) {
+        if (self.console && console.error) {
+            console.error('Appcues snippet included twice.');
+        }
+        return;
+    }
+
+    if (Appcues.identify) return;
+    Appcues.invoked = true;
+
+    var methods = [
+        "identify",
+        "track",
+        "page",
+        "anonymous",
+        "start",
+        "show",
+        "clearShow",
+        "on",
+        "off",
+        "once",
+        "reset",
+        "debug",
+        "user",
+        "call",
+        "settings",
+        "content",
+        "initMixpanel",
+        "initHeap",
+        "initIntercom",
+        "initCIO",
+        "initWoopra",
+        "initAmplitude",
+        "initKlaviyo",
+        "initTD",
+        "initLl",
+        "initCalq",
+        "initKM",
+        "initGA",
+        "initGTM",
+        "initSegment",
+        "injectContent",
+        "injectStyles"
+    ];
+
+    var promises = [
+        "user"
+    ];
+
+    function factory(method){
+        return function(){
+            var args = Array.prototype.slice.call(arguments);
+            if (isBootstrapped) {
+              self.Appcues[method].apply(self.Appcues, args);
+            } else {
+              args.unshift(method);
+              Appcues.push(args);
+            }
+            return self.Appcues;
+        };
+    }
+
+    // For each of our methods, generate a queueing stub.
+    for (var i = 0; i < methods.length; i++) {
+        var key = methods[i];
+        Appcues[key] = factory(key);
+    }
+
+    for (var i = 0; i < promises.length; i++) {
+        var key = promises[i];
+        Appcues[key] = function() {
+          var args = Array.prototype.slice.call(arguments);
+          if (isBootstrapped) {
+            return self.Appcues[key].apply(self.Appcues, args);
+          } else {
+            return new Promise(function(resolve, _reject) {
+              args.unshift(resolve);
+              args.unshift(key);
+              Appcues.push(args);
+            });
+          }
+        };
+    }
+
+    if (
+      !skipAMD &&
+      typeof window.define === "function" &&
+      window.define.amd &&
+      (window.define.amd.vendor == null ||
+        window.define.amd.vendor !== "dojotoolkit.org")
+    ) {
+      window.define(function() { return Appcues; });
+    }
+
+    function load(){
+        var bundleScript = doc.createElement("script");
+        bundleScript.crossOrigin = "anonymous";
+        bundleScript.integrity = "sha256-o+Mjw9liPATZ4a0GQIxJUP7oWkeGw63cQfsvwHlamKs=";
+        bundleScript.type = "text/javascript";
+        bundleScript.src = GENERIC_BUNDLE_URL;
+        bundleScript.async = true;
+        bundleScript.onload = function () {
+            isBootstrapped = true;
+            Appcues.forEach(function(call) {
+                var fnName = call[0];
+                var args = call.slice(1);
+                if (promises.indexOf(fnName) === -1) {
+                  self[ns] && self[ns][fnName] &&
+                      self[ns][fnName].apply(self[ns], args);
+                } else {
+                  var resolve = args[0];
+                  var promiseArgs = args.slice(1);
+                  self[ns] && self[ns][fnName] &&
+                    self[ns][fnName].apply(self[ns], promiseArgs).then(
+                      function() { resolve(arguments[0]); }
+                    );
+                }
+            });
+        };
+
+        var firstScript = doc.getElementsByTagName('script')[0];
+        firstScript.parentNode.insertBefore(bundleScript, firstScript);
+    }
+    Appcues.SNIPPET_VERSION = VERSION;
+    load();
+})(window, 'Appcues');
